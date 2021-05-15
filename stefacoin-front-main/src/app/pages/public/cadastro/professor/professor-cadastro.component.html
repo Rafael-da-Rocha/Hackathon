@@ -1,0 +1,28 @@
+<div class="container">
+    <form [formGroup]="profileForm">
+      <label>
+        Nome:
+        <input type="text" formControlName="nome">
+      </label>
+  
+      <label>
+        E-mail:
+        <input type="email" formControlName="email">
+      </label>
+      <p>
+        <label>
+          Senha:
+          <input type="password" formControlName="pwd1">
+        </label>
+    
+        <label>
+          Confirmação de Senha:
+          <input type="password" formControlName="pwd2">
+        </label>  
+      </p>
+      <p>
+        <button type="button" class="btn btn-success mr-1" (click)="incluir()">{{textoBotao}}</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+      </p>
+    </form>
+  </div>

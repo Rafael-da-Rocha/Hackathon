@@ -1,0 +1,78 @@
+<div class="container">
+  <form [formGroup]="profileForm">
+    <label>
+      Nome:
+      <input type="text" formControlName="nome">
+    </label>
+
+    <label>
+      E-mail:
+      <input type="email" formControlName="email">
+    </label>
+    <p>
+      <label>
+        Senha:
+        <input type="password" formControlName="pwd1">
+      </label>
+  
+      <label>
+        Confirmação de Senha:
+        <input type="password" formControlName="pwd2">
+      </label>  
+    </p>
+    
+    <label>
+      Formação:
+      <input type="text" formControlName="formacao">
+    </label> 
+
+    <label>
+      Idade:
+      <input type="text" formControlName="idade">
+    </label>
+    <p>
+      <button type="button" class="btn btn-success mr-1" (click)="incluir()">{{textoBotao}}</button>
+      <button type="reset" class="btn btn-secondary">Limpar</button>
+    </p>
+  </form>
+
+
+  <!-- <form>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" placeholder="Nome">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="text" class="form-control" id="email" placeholder="exemplo@email.com">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="pwd1">Senha:</label>
+        <input type="password" class="form-control" id="pwd1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="pwd2">Confirmar Senha:</label>
+        <input type="password" class="form-control" id="pwd2" aria-describedby="emailHelp">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem *ngFor="let i of arrayOpcoes">{{i}}</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="form-group col-md-1">
+        <label for="idade">Idade:</label>
+        <input type="text" class="form-control" id="idade">
+      </div>
+    </div>
+    <button type="button" class="btn btn-success mr-1"(click)="incluir">{{this.textoBotao}}</button>
+    <button type="reset" class="btn btn-secondary">Limpar</button>
+
+  </form> -->
+</div>
